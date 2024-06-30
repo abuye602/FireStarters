@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FireStarters Ministry</title>
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="contact-header">
+      <h2 class="logo">
+        <a href="index.html"
+          ><img
+            src="img/FIRESTARTERS.png"
+            id="contact-logo"
+            class="logo"
+            alt="Logo"
+        /></a>
+      </h2>
+      <ul class="nav" id="nav-give">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="give.html">Give</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </header>
+  </body>
+
+  <!-- Form section -->
+  <section>
+    <form action="">
+      <span>Give Here</span>
+      <div>
+        <input type="text" name="FName" placeholder="First Name" />
+        <input type="text" name="LName" placeholder="Last Name" />
+      </div>
+      <div>
+        <input
+          type="text"
+          name="CardNumber"
+          placeholder="Card Number"
+          required
+        />
+        <input
+          type="number"
+          name="ExpDate"
+          placeholder="MM"
+          min="1"
+          max="12"
+          required
+        />
+        <input type="text" name="ExpYear" placeholder="YYYY" required />
+        <input
+          type="text"
+          name="CVV"
+          placeholder="CVV"
+          minlength="3"
+          maxlength="3"
+          required
+        />
+      </div>
+    </form>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="content-area" id="contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3 class="section-title">Our <span> Contact</span></h3>
+        <div>
+          <ul class="contact-content">
+            <li>
+              <a href="contact.html"> <i class="fa fa-map-marker"></i></a>
+
+              <p>3643 W Glendale Ave <br />Phoenix, AZ 85051</p>
+            </li>
+            <li>
+              <a href="contact.html"> <i class="fa fa-phone"></i> </a>
+              <p>+123 456 7890 <br />+451 758 9525</p>
+            </li>
+            <li>
+              <a href="contact.html"> <i class="fa fa-envelope"></i> </a>
+              <p>FireStarters@gmail.com <br />yourdomain@website.com</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>All Rights Reserved by Your Website</p>
+  </footer>
+</html>
