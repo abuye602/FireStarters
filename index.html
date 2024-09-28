@@ -15,17 +15,20 @@
   <body>
     <!-- Header/Nav -->
     <header>
-      <h2 class="logo">
-        <a href="#"
-          ><img src="img/FIRESTARTERS.png" class="logo" alt="Logo"
-        /></a>
-      </h2>
+      <a href="#"><img src="img/FIRESTARTERS.png" class="logo" alt="Logo" /></a>
       <ul class="nav">
         <li><a href="#">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="give.html">Give</a></li>
+        <li class="dropdown">
+          <a href="#">Ministries</a>
+          <ul class="dropdown-menu">
+            <li><a href="children.html">Children</a></li>
+            <li><a href="young-adults.html">Young Adults</a></li>
+            <li><a href="#">Afiliation</a></li>
+          </ul>
+        </li>
         <li><a href="contact.html">Contact</a></li>
+        <button onclick="location.href='give.html';">Give</button>
       </ul>
     </header>
 
@@ -84,12 +87,16 @@
     <!-- Quote Section -->
     <section class="msg-area">
       <div class="msg-content">
-        <h2>Quote of the day</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
-          dolor blanditiis iusto veniam, voluptates aperiam recusandae et est
-          consectetur sequi, earum id voluptatibus sint dolorum quos vero
-          quisquam similique repellendus!
+        <h2>Verse</h2>
+        <p class="info">
+          I looked again. I saw a huge crowd, too huge to count. Everyone was
+          there—all nations and tribes, all races and languages. And they were
+          standing, dressed in white robes and waving palm branches, standing
+          before the Throne and the Lamb and heartily singing: Salvation to our
+          God on his Throne! Salvation to the Lamb! All who were standing around
+          the Throne—Angels, Elders, Animals—fell on their faces before the
+          Throne and worshiped God, singing: Oh, Yes! The blessing and glory and
+          wisdom and thanksgiving. <br /><span>Revelation 7:9-12</span>
         </p>
       </div>
     </section>
@@ -155,5 +162,6 @@
     <footer>
       <p>All Rights Reserved by Your Website</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -27,27 +27,33 @@ header {
   justify-content: space-between;
   align-items: center;
   color: white;
-  padding: 35px 20px 0;
-  position: absolute;
+  font-weight: 600;
+  padding: 35px 20px;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
   width: 100%;
+  height: 13%;
+  background-color: rgba(146, 140, 140, 0.5);
+}
+.video-section {
+  width: 1200px;
+  height: 700px;
 }
 
-header h2 img {
-  background-color: black;
-  width: 100px;
+.logo {
   height: 100px;
-  background-color: transparent;
-  position: absolute;
-  top: 5px;
-  left: 5px;
+  width: 100px;
 }
 
 .nav li:hover {
+  color: #ff0000c0;
+  transition: 0.4s;
+}
+
+.nav li a.active {
   color: #bf0a30;
-  transition: 0.7s;
 }
 
 header ul.nav {
@@ -55,7 +61,71 @@ header ul.nav {
 }
 
 header ul.nav li {
+  display: flex;
   margin: 0 15px;
+  align-items: center;
+}
+
+.dropdown-menu {
+  border-radius: 2px;
+  display: none; /* Initially hide the dropdown menu */
+  position: absolute;
+  top: 65px;
+  background-color: rgba(146, 140, 140, 0.5);
+  width: 185px;
+  box-shadow: 0 2px 5px rgba(130, 129, 129, 0.2); /* Optional: Adds a shadow to dropdown */
+  z-index: 1; /* Ensure dropdown appears above other content */
+  opacity: 0; /* Start with opacity 0 */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add a smooth opacity and transform transition */
+  transform: translateY(-10px);
+}
+
+.dropdown-menu li {
+  text-align: left; /* Align text to the left */
+}
+
+.dropdown-menu li a {
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  color: #bf0a30;
+}
+
+/* Show dropdown when hovering over parent li */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1; /* Fade in the dropdown */
+  transform: translateY(0); /* Bring dropdown back to original position */
+  transition-delay: 0.3s; /* Delay the appearance of the dropdown */
+}
+
+header button {
+  background-color: #bf0a30;
+  color: white;
+  height: 50px;
+  width: 90px;
+  margin-left: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: transform 0.5s ease 0.1s, box-shadow 0.3s ease 0.1s; /* Smooth transition with delay */
+}
+
+header button:hover {
+  opacity: 85%;
+  transform: translateY(-2px); /* Move button 5px up */
+
+  transition: 0.3s ease-in-out;
+  box-shadow: 1px 9px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+header button:active {
+  opacity: 70%;
+  color: #fff;
 }
 
 @media (max-width: 1000px) {
@@ -111,16 +181,36 @@ section p {
   text-align: center;
 }
 
-#services-banner .banner-img {
-  background-image: url(img/service1.jpeg);
+.banner-area .banner-img {
+  background-image: url(img/background1.jpeg);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-size: cover;
+  background-attachment: fixed;
   z-index: -1;
   background-position: center center;
+}
+
+.banner-area .banner-img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+#children-banner .banner-img {
+  background-image: url(img/children.jpg);
+}
+
+#young-adults-banner .banner-img {
+  background-image: url(img/young-adults.jpg);
 }
 
 .info span {
@@ -138,28 +228,6 @@ section p {
   background-size: cover;
   z-index: -1;
   background-position: center center;
-}
-.banner-area .banner-img {
-  background-image: url(img/background1.jpeg);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  z-index: -1;
-  background-position: center center;
-}
-
-.banner-area .banner-img:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.7;
 }
 
 .banner-area h1 {
@@ -280,8 +348,8 @@ ul.about-content {
 
 /* msg area */
 .msg-area {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(img/b2.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/Worship.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
