@@ -41,8 +41,17 @@ header {
   backdrop-filter: blur(10px);
 }
 
+/* banner area */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px 100px;
+  color: #000;
+}
+
 hr {
-  width: 80%;
+  width: 100%;
   margin: auto;
   opacity: 50%;
 }
@@ -153,15 +162,6 @@ header button:active {
   header ul.nav li {
     margin: 0 7px;
   }
-}
-
-/* banner area */
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 110px 100px;
-  color: #000;
 }
 
 @media (max-width: 1000px) {
@@ -328,6 +328,62 @@ ul.about-content {
   color: #bf0a30;
 }
 
+#about-text {
+  padding: 0px;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.accordian {
+  display: grid;
+  margin: 2% 0;
+  width: 80vw;
+}
+
+.accordian .header {
+  display: flex;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 2.4rem;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  width: 100%;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.accordian .header p {
+  margin: 0 auto;
+  padding: 0;
+  width: fit;
+  letter-spacing: 1px;
+}
+
+.accordian .header p span {
+  color: #bf0a30;
+}
+
+.accordian .header i {
+  align-items: right;
+  font-size: 50px;
+}
+
+.accordian .content {
+  font-size: 1.1rem;
+  display: none;
+  margin: 0 auto;
+}
+
+.accordian span {
+  justify-self: right;
+}
+
+#beliefs-header {
+  margin-top: -50px;
+  margin-bottom: -5px;
+}
+
 #nav-give {
   color: black;
   font-weight: 600;
@@ -335,11 +391,92 @@ ul.about-content {
 .section-title {
   text-transform: uppercase;
   font-size: 50px;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .section-title span {
   color: #bf0a30;
+}
+
+.ministry-container {
+  display: flex;
+  width: 100vw;
+  margin: 0px 0px;
+  padding: 0 0;
+}
+
+.ministry-row {
+  display: flex;
+}
+
+.ministry-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  min-height: 500px;
+}
+
+.ministry-column:first-child {
+  background-color: #222121;
+  color: white;
+}
+
+.ministry-column:last-child {
+  background-color: #e8e8e8;
+}
+
+.ministry-column p {
+  max-width: 80%;
+  margin: 0px auto;
+  font-size: 18pxx;
+}
+
+@media (max-width: 768px) {
+  .ministry-container {
+    flex-direction: column;
+  }
+  
+  .ministry-column {
+    width: 100%;
+  }
+}
+
+
+
+.leader-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.leader-individual {
+  flex: 0 1 calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  margin: 0px 20px;
+  box-sizing: border-box;
+  max-width: 300px;
+}
+
+.leader-individual p {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.leader-title {
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .about-btn {
