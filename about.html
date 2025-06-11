@@ -14,24 +14,15 @@
   </head>
   <body>
     <header>
-      <h2 class="logo">
-        <a href="index.html"
-          ><img src="img/FIRESTARTERS.png" class="logo" alt="Logo"
-        /></a>
-      </h2>
+      <a href="#"><img src="img/FIRESTARTERS.png" class="logo" alt="Logo" /></a>
       <ul class="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#" style="color: #ff0000c0">ABOUT</a></li>
         <li class="dropdown">
-          <a href="#">Ministries</a>
-          <ul class="dropdown-menu">
-            <li><a href="children.html">Children</a></li>
-            <li><a href="young-adults.html">Young Adults</a></li>
-            <li><a href="#">Afiliation</a></li>
-          </ul>
+          <a href="ministries.html">MINISTRIES</a>
         </li>
-        <li><a href="contact.html">Contact</a></li>
-        <button onclick="location.href='give.html';">Give</button>
+        <li><a href="contact.html">CONTACT</a></li>
+        <button onclick="location.href='give.html';">GIVE</button>
       </ul>
     </header>
 
@@ -40,22 +31,74 @@
       <div class="banner-img"></div>
       <h3>We Seek The Presence of God</h3>
       <h1>God is <span>Almighty</span></h1>
-      <a href="#" class="banner-btn">More Info</a>
     </section>
 
-    <!-- Service Section -->
-    <section class="services-area" id="services">
-      <h3 class="section-title">Our <span>Services</span></h3>
-      <ul class="services-content">
+    <!-- Mission Statement -->
+    <section>
+      <h3 class="section-title">Our <span>Mission</span></h3>
+      <p id="about-text">
+        Igniting hearts to walk boldly with Christ, Firestarters empowers young disciples to 
+        cultivate a vibrant spiritual presence in their daily lives. We are committed to nurturing 
+        authentic faith journeys where each person becomes a vessel of God's transformative love. Together, 
+        we kindle the divine spark within, creating a community where the Spirit's guidance illuminates 
+        our path and inspires us to spread that light throughout the world.
+      </p>
+    </section>
+
+    <section>
+      <h3 class="section-title" id="beliefs-header"><span>Beliefs</span></h3>
+      <ul>
         <li>
-          <h4>Sunday Services</h4>
-          <p>Time: 7pm-9:30pm</p>
-        </li>
-        <li>
-          <h4>Wednesday Night Prayer</h4>
-          <p>Time: 7pm-9pm</p>
+          <div class="accordian">
+            <div class="header">
+              <p>THE LORD IS <span>GOD</span> - THE LORD IS ONE</p>
+              <i class="fa fa-solid fa-caret-down"></i>            
+            </div>
+            <div class="content">
+              <p>We believe that the Bible clearly teaches salvation is a gift of God’s grace, received through faith in Jesus Christ. 
+                As Romans 10:9 says, “If you confess with your mouth, ‘Jesus is Lord,’ and believe in your heart that God raised 
+                Him from the dead, you will be saved.” This means that salvation is not earned by good works or personal effort,
+                but comes by placing our trust in Jesus, acknowledging Him as Lord, and receiving the new life He offers.</p>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="accordian">
+            <div class="header">
+              <p>THE BIBLE IS THE DIVINE WORD OF <span>GOD</span></p>
+              <i class="fa fa-solid fa-caret-down"></i>            
+            </div>
+            <div class="content">
+              <p>We believe that the Bible clearly teaches salvation is a gift of God’s grace, received through faith in Jesus Christ. 
+                As Romans 10:9 says, “If you confess with your mouth, ‘Jesus is Lord,’ and believe in your heart that God raised 
+                Him from the dead, you will be saved.” This means that salvation is not earned by good works or personal effort,
+                but comes by placing our trust in Jesus, acknowledging Him as Lord, and receiving the new life He offers.</p>
+            </div>
+          </div>
         </li>
       </ul>
+    </section>
+
+    <section class="">
+      <h3 class="section-title"><span>Leadership</span></h3>
+      <div class="leader-section">
+        <div class="leader-individual">
+          <img src="img/matt.jpg" alt="" />
+          <p class="leader-title">Matt Smith</p>
+          <p>Doctor Who</p>
+        </div>  
+        <div class="leader-individual">
+          <img src="img/matt.jpg" alt="" />
+          <p class="leader-title">Matt Smith</p>
+          <p>Doctor Who</p>
+        </div>   
+        <div class="leader-individual">
+          <img src="img/matt.jpg" alt="" />
+          <p class="leader-title">Matt Smith</p>
+          <p>Doctor Who</p>
+        </div>  
+      </div>
     </section>
 
     <!-- Quote Section -->
@@ -99,5 +142,6 @@
     <footer>
       <p>All Rights Reserved by Your Website</p>
     </footer>
+    <script src="js/about.js"></script>
   </body>
 </html>
