@@ -20,7 +20,12 @@
           ><img src="img/FIRESTARTERS.png" class="logo" alt="Logo"
         /></a>
       </h2>
-      <ul class="nav">
+      <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="nav" id="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li class="dropdown">
@@ -32,7 +37,7 @@
           </ul>
         </li>
         <li><a href="contact.html">Contact</a></li>
-        <button onclick="location.href='give.html';">Give</button>
+        <button onclick="location.href = 'give.html'">Give</button>
       </ul>
     </header>
 
@@ -68,7 +73,15 @@
         src="https://www.youtube.com/embed/poJTirkapTQ?si=eoNXjVah0z0tQ-HC"
         title="YouTube video player"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
       ></iframe>
@@ -115,5 +128,6 @@
     <footer>
       <p>All Rights Reserved by Your Website</p>
     </footer>
+    <script src="js/nav.js"></script>
   </body>
 </html>

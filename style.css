@@ -15,7 +15,7 @@ body {
 ul,
 ul.nav {
   list-style: none;
-  font-family: serif;
+  font-family: Poppins, sans-serif;
   font-size: 1rem;
 }
 
@@ -41,6 +41,57 @@ header {
   backdrop-filter: blur(10px);
 }
 
+.hamburger {
+  display: none;
+  width: 31px;
+  height: 24px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  transform-origin: center;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.hamburger div:nth-child(1) {
+  transform: translateY(-9px);
+}
+
+.hamburger div:nth-child(2) {
+  transform: translateY(0);
+}
+
+.hamburger div:nth-child(3) {
+  transform: translateY(9px);
+}
+
+.hamburger.active div {
+  background-color: #000;
+}
+
+.hamburger.active div:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+
+.hamburger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+
 /* banner area */
 section {
   display: flex;
@@ -59,6 +110,13 @@ hr {
 .video-section {
   width: 1200px;
   height: 700px;
+}
+
+@media (max-width: 1200px) {
+  .video-section {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .logo {
@@ -95,7 +153,9 @@ header ul.nav li {
   box-shadow: 0 2px 5px rgba(130, 129, 129, 0.2); /* Optional: Adds a shadow to dropdown */
   z-index: 1; /* Ensure dropdown appears above other content */
   opacity: 0; /* Start with opacity 0 */
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add a smooth opacity and transform transition */
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out; /* Add a smooth opacity and transform transition */
   transform: translateY(-10px);
 }
 
@@ -131,7 +191,9 @@ header button {
   cursor: pointer;
   border: none;
   border-radius: 6px;
-  transition: transform 0.5s ease 0.1s, box-shadow 0.3s ease 0.1s; /* Smooth transition with delay */
+  transition:
+    transform 0.5s ease 0.1s,
+    box-shadow 0.3s ease 0.1s; /* Smooth transition with delay */
 }
 
 header button:hover {
@@ -152,12 +214,72 @@ header button:active {
     padding: 20px 50px;
   }
 }
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    position: relative;
+    z-index: 1001;
+  }
+
+  header ul.nav {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(25, 25, 25, 0.95);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 110px 24px 32px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease,
+      visibility 0s linear 0.25s;
+    z-index: 1000;
+  }
+
+  header ul.nav.active {
+    color: black;
+    background-color: whitesmoke;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease,
+      visibility 0s linear 0s;
+  }
+
+  header ul.nav li {
+    margin: 0;
+    text-align: center;
+  }
+
+  header ul.nav li a {
+    font-size: 1.35rem;
+    font-weight: 600;
+  }
+
+  header button {
+    width: min(260px, 90%);
+    margin: 10px auto 0;
+  }
+}
 @media (max-width: 700px) {
   header {
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
   }
   header h2 {
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
   header ul.nav li {
     margin: 0 7px;
@@ -175,6 +297,12 @@ header button:active {
     padding: 125px 30px;
   }
 }
+
+@media (max-width: 480px) {
+  section {
+    padding: 100px 20px;
+  }
+}
 section p {
   max-width: 800px;
   text-align: center;
@@ -187,8 +315,8 @@ section p {
   padding: 1rem;
   background-color: red;
   border-radius: 10px;
-  font-weight:900;
-  color: white
+  font-weight: 900;
+  color: white;
 }
 
 .banner-area {
@@ -400,7 +528,7 @@ ul.about-content {
 
 .ministry-container {
   display: flex;
-  width: 100vw;
+  width: 100%;
   margin: 0px 0px;
   padding: 0 0;
 }
@@ -433,20 +561,18 @@ ul.about-content {
 .ministry-column p {
   max-width: 80%;
   margin: 0px auto;
-  font-size: 18pxx;
+  font-size: 18px;
 }
 
 @media (max-width: 768px) {
   .ministry-container {
     flex-direction: column;
   }
-  
+
   .ministry-column {
     width: 100%;
   }
 }
-
-
 
 .leader-section {
   display: flex;
@@ -489,14 +615,28 @@ ul.about-content {
   padding: 0;
   vertical-align: bottom;
   padding-top: 20px;
-
 }
 
 .leader-title {
   padding: 0;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Poppins, sans-serif;
   font-size: 18px;
   font-weight: 200;
+}
+
+@media (max-width: 768px) {
+  .leader-section {
+    gap: 10px;
+  }
+  .leader-individual {
+    flex: 0 1 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .leader-individual {
+    flex: 0 1 100%;
+  }
 }
 
 .about-btn {
@@ -523,13 +663,14 @@ ul.about-content {
 
 @media (max-width: 700px) {
   .about-right p {
-    display: none;
+    display: block;
   }
 }
 
 /* msg area */
 .msg-area {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
     url(img/Worship.jpg);
   background-size: cover;
   background-position: center center;
@@ -559,6 +700,7 @@ ul.about-content {
 ul.services-content {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -667,6 +809,9 @@ section .contact-container {
 
 .contact-content {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -704,6 +849,19 @@ section .contact-container {
   }
 }
 
+@media (max-width: 768px) {
+  section .contact-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .contact-info {
+    margin-bottom: 50px;
+  }
+  .map {
+    margin-left: 0;
+  }
+}
+
 /* footer */
 footer {
   display: flex;
@@ -714,4 +872,171 @@ footer {
   width: 100%;
   padding: 30px 0;
   background-color: #f0f0f0;
+  padding: 50px 0;
+}
+
+/* Global responsive safety */
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.map iframe {
+  width: 100%;
+  max-width: 100%;
+  min-height: 320px;
+}
+
+@media (max-width: 1024px) {
+  header {
+    height: auto;
+    min-height: 78px;
+    padding: 16px 20px;
+  }
+
+  .logo {
+    height: 76px;
+    width: 76px;
+  }
+
+  section {
+    padding: 110px 32px 72px;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 5.6vw, 2.6rem);
+    text-align: center;
+  }
+
+  .banner-area h1 {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+  }
+
+  .banner-area h3 {
+    font-size: clamp(1rem, 3.5vw, 1.4rem);
+  }
+
+  .accordian {
+    width: 100%;
+  }
+
+  .accordian .header {
+    font-size: clamp(1.05rem, 3.2vw, 1.5rem);
+    gap: 12px;
+  }
+
+  .accordian .header i {
+    font-size: 32px;
+    flex-shrink: 0;
+  }
+
+  .leader-individual {
+    margin: 0;
+  }
+
+  .contact-info {
+    padding: 24px 20px 0;
+  }
+
+  .contact-info h3 {
+    padding-left: 0;
+    font-size: clamp(1.8rem, 5.4vw, 2.5rem);
+    text-align: center;
+  }
+
+  section .contact-container {
+    width: 100%;
+    margin: 40px auto 0;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  header ul.nav {
+    gap: 18px;
+  }
+
+  header ul.nav li {
+    justify-content: center;
+  }
+
+  header button {
+    width: min(260px, 90%);
+    margin: 10px auto 0;
+  }
+
+  section {
+    padding: 104px 20px 60px;
+  }
+
+  section p {
+    padding: 12px 0;
+    margin-bottom: 20px;
+    line-height: 1.7;
+  }
+
+  .services-content li {
+    padding: 0 6px;
+  }
+
+  .ministry-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ministry-column {
+    min-height: auto;
+    padding: 32px 20px;
+  }
+
+  .ministry-column p {
+    max-width: 100%;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    gap: 14px;
+    align-items: stretch;
+  }
+
+  .contact-content li {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .contact-content li i {
+    font-size: 36px;
+    margin: 0;
+  }
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 64px;
+    width: 64px;
+  }
+
+  .banner-area {
+    min-height: 88vh;
+  }
+
+  .banner-area a.banner-btn,
+  .about-btn,
+  .page-link {
+    display: inline-block;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .leader-name {
+    font-size: 1.35rem;
+  }
 }

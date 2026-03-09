@@ -16,14 +16,19 @@
     <!-- Header/Nav -->
     <header>
       <a href="#"><img src="img/FIRESTARTERS.png" class="logo" alt="Logo" /></a>
-      <ul class="nav">
+      <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="nav" id="nav">
         <li><a href="#" style="color: #ff0000c0">HOME</a></li>
         <li><a href="about.html">ABOUT</a></li>
         <li class="dropdown">
           <a href="ministries.html">MINISTRIES</a>
         </li>
         <li><a href="contact.html">CONTACT</a></li>
-        <button onclick="location.href='give.html';">GIVE</button>
+        <button onclick="location.href = 'give.html'">GIVE</button>
       </ul>
     </header>
 
@@ -50,14 +55,16 @@
       </ul>
     </section>
 
-    <hr>
+    <hr />
 
     <!-- About Section -->
     <section class="about-area" id="about">
       <h4 class="">We live to be in fellowship with <span>Jesus</span></h4>
       <p>
-        Started in 2015, Firestarters is a youth ministry centered on the biblical teachings and presence of Jesus. We study the scriptures together,
-        worship together, fast together, and commune with each other regularly.
+        Started in 2015, Firestarters is a youth ministry centered on the
+        biblical teachings and presence of Jesus. We study the scriptures
+        together, worship together, fast together, and commune with each other
+        regularly.
       </p>
       <a href="about.html" class="page-link">LEARN MORE</a>
     </section>
@@ -115,30 +122,28 @@
       </ul>
     </section>
 
-
-    <!-- Contact Section -->
-    <section class="content-area" id="contact">
-      <h3 class="section-title">Our <span>Contact</span></h3>
-      <ul class="contact-content">
-        <li>
-          <a href="contact.html"> <i class="fa fa-map-marker"></i></a>
-
-          <p>3643 W Glendale Ave <br />Phoenix, AZ 85051</p>
-        </li>
-        <li>
-          <a href="contact.html"> <i class="fa fa-phone"></i> </a>
-          <p>+123 456 7890 <br />+451 758 9525</p>
-        </li>
-        <li>
-          <a href="contact.html"> <i class="fa fa-envelope"></i> </a>
-          <p>FireStarters@gmail.com <br />yourdomain@website.com</p>
-        </li>
-      </ul>
-    </section>
-
     <!-- Footer Section -->
     <footer>
-      <p>All Rights Reserved by Your Website</p>
+      <div class="content-area" id="contact">
+        <h3 class="section-title">Our <span>Contact</span></h3>
+        <ul class="contact-content">
+          <li>
+            <a href="contact.html"> <i class="fa fa-map-marker"></i></a>
+
+            <p>3643 W Glendale Ave <br />Phoenix, AZ 85051</p>
+          </li>
+          <li>
+            <a href="contact.html"> <i class="fa fa-phone"></i> </a>
+            <p>+123 456 7890 <br />+451 758 9525</p>
+          </li>
+          <li>
+            <a href="contact.html"> <i class="fa fa-envelope"></i> </a>
+            <p>FireStarters@gmail.com <br />yourdomain@website.com</p>
+          </li>
+        </ul>
+        <p>All Rights Reserved by Your Website</p>
+      </div>
     </footer>
+    <script src="js/nav.js"></script>
   </body>
 </html>
