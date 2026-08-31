@@ -1,163 +1,349 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>FireStarters Ministry</title>
-    <link
-      rel="stylesheet"
-      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore FireStarters young-adult and children’s ministries and our partnerships with Daniel Initiative, Surge Network, and The Faithful City."
     />
-    <link rel="stylesheet" href="style.css" />
+    <title>Ministries | FireStarters Ministry</title>
+
+    <!-- Favicon tab images -->
+    <link
+      rel="android-chrome"
+      type="image/png"
+      href="favicon_io/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="android-chrome"
+      type="image/png"
+      href="favicon_io/android-chrome-512x512.png"
+      sizes="512x512"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon_io/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon_io/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
-    <!-- Header Section -->
-    <header>
-      <h2 class="logo">
-        <a href="index.html"
-          ><img src="img/FIRESTARTERS.png" class="logo" alt="Logo"
-        /></a>
-      </h2>
-      <div class="hamburger" id="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <ul class="nav" id="nav">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li class="dropdown" style="color: #ff0000c0"><a href="#">MINISTRIES</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <button onclick="location.href='give.html';">GIVE</button>
-      </ul>
+
+  <body class="ministries-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="FireStarters home">
+        <img src="img/FIRESTARTERS.png" alt="" /><span>FireStarters</span></a
+      ><button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open navigation"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="ministries.html" aria-current="page">Ministries</a></li>
+          <li><a href="contact.html">Visit</a></li>
+        </ul>
+        <a class="nav-give" href="give.html">Give</a>
+      </nav>
     </header>
 
-    <!-- Banner img -->
-    <section class="banner-area" id="children-banner">
-      <div class="banner-img"></div>
-      <h3>We Seek The Presence of God</h3>
-      <h1>God is <span>Almighty</span></h1>
-    </section>
-
-    <!-- Childrens Ministry -->
-    <section class="ministry-container">
-      <div class="ministry-row">
-        <div class="ministry-column">
-          <h3 class="section-title">CHILDREN'S MINISTRY</h3>
-          <p>Sundays @ 11AM</p>
-        </div>
-        <div class="ministry-column">
-          <p>Our children's ministry provides a nurturing environment where young ones can grow in their faith and understanding of God's love. Through engaging activities, Bible stories, and worship, we help children build a strong spiritual foundation.</p>
-        </div>
-      </div>
-      <section class="">
-        <div class="leader-section">
-          <div class="leader-individual">
-            <img src="img/Dee.JPG" alt="" />
-            <p class="leader-name">Deenbo Kidane</p>
-            <p class="leader-title">Master Apostle</p>
-          </div>  
-          <div class="leader-individual">
-            <img src="img/DSC00891_01.jpg" alt="" />
-            <p class="leader-name">Abuye Yegezu</p>
-            <p class="leader-title">Secretary Leader</p>
-          </div>  
-          <div class="leader-individual">
-            <img src="img/DSC00879.jpg" alt="" />
-            <p class="leader-name">Zelalem Yegezu</p>
-            <p class="leader-title">Angelic Interpreter</p>
-          </div>   
-          <div class="leader-individual">
-            <img src="img/Sally.jpg" alt="" />
-            <p class="leader-name">Salihome Mengestu</p>
-            <p class="leader-title">Daughter of Apostle Paul</p>
-          </div> 
-          <div class="leader-individual">
-            <img src="img/Bethel.jpg" alt="" />
-            <p class="leader-name">Bethel Eshetu</p>
-            <p class="leader-title">Optimus Evangelist</p>
-          </div> 
-          <div class="leader-individual">
-            <img src="img/ProphetJosh.jpg" alt="" />
-            <p class="leader-name">Joshua Lonsako</p>
-            <p class="leader-title">shows up sometimes</p>
-          </div> 
+    <main id="main">
+      <section class="page-hero">
+        <img
+          src="img/young-adults.jpg"
+          alt="Members of the FireStarters young-adult ministry together"
+        />
+        <div class="page-hero__content">
+          <p class="eyebrow">Ministries and partnerships</p>
+          <h1>Faith moves toward people.</h1>
+          <p>
+            From the youngest members of our church to leaders across our city,
+            we want to encourage, equip, and serve wherever God has placed us.
+          </p>
         </div>
       </section>
-      <div class="ministry-row">
-        <div class="ministry-column">
-          <h3 class="section-title">Young Adults MINISTRY</h3>
-          <p>Sundays @ 7PM | Wednesdays @ 7PM</p>
+
+      <section class="section">
+        <div class="container split-layout">
+          <div class="split-layout__media">
+            <img
+              src="img/background1.jpeg"
+              alt="The FireStarters young-adult community"
+            />
+          </div>
+          <div class="split-layout__copy">
+            <p class="eyebrow">Our primary community</p>
+            <h2 class="section-heading section-heading--small">Young Adults</h2>
+            <p>
+              FireStarters is a place for young adults to pursue Jesus with
+              others. We study Scripture, worship, pray, fast, share meals, and
+              build the kind of friendships that help faith endure.
+            </p>
+            <ul class="schedule-list">
+              <li>
+                <strong>Sunday gathering</strong><span>3:00–5:30 PM</span>
+              </li>
+              <li>
+                <strong>First Wednesday</strong
+                ><span>Trauma-informed care · 7:00–9:00 PM</span>
+              </li>
+              <li>
+                <strong>Remaining Wednesdays</strong
+                ><span>Prayer · 7:00–9:00 PM</span>
+              </li>
+            </ul>
+            <a
+              class="button button--dark-outline ministry-action"
+              href="young-adults.html"
+              >Learn more</a
+            >
+          </div>
         </div>
-        <div class="ministry-column">
-          <p>Igniting hearts to walk boldly with Christ, Firestarters empowers
-            young disciples to  cultivate a vibrant spiritual presence in their
-            daily lives. We are committed to nurturing  authentic faith 
-           journeys where each person becomes a vessel of God's 
-           transformative love.</p>
-        </div>
-      </div>
-      <section class="">
-        <div class="leader-section">   
-          <div class="leader-individual">
-            <img src="img/97f2e4e6-97d8-46ae-8758-ab73b00dc370.JPG" alt="" />
-            <p class="leader-name">Deenbo Kidane</p>
-            <p class="leader-title">Master Apostle</p>
-          </div>  
+        <div class="container leader-block">
+          <p class="eyebrow">Young-adult leadership</p>
+          <h2 class="section-heading section-heading--small">
+            Meet the leader.
+          </h2>
+          <div class="team-grid">
+            <article class="team-card">
+              <img
+                src="img/Dee.JPG"
+                alt="FireStarters logo used as a placeholder for Deenbo Kidane’s missing photo"
+              />
+              <div class="team-card__copy">
+                <h3>Deenbo Kidane</h3>
+                <p>Master Apostle</p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
+
+      <section class="section sand-section">
+        <div class="container split-layout split-layout--reverse">
+          <div class="split-layout__media">
+            <img
+              src="img/children.jpg"
+              alt="Children enjoying an outdoor ministry activity"
+            />
+          </div>
+          <div class="split-layout__copy">
+            <p class="eyebrow">The next generation</p>
+            <h2 class="section-heading section-heading--small">
+              Children’s Ministry
+            </h2>
+            <p>
+              Our young-adult team helps lead a safe, joyful environment where
+              children encounter the story of Jesus through age-appropriate
+              teaching, worship, and engaging activities.
+            </p>
+            <ul class="schedule-list">
+              <li><strong>Sunday gathering</strong><span>11:00 AM</span></li>
+            </ul>
+            <a
+              class="button button--dark-outline ministry-action"
+              href="children.html"
+              >Learn more</a
+            >
+          </div>
+        </div>
+        <div class="container leader-block">
+          <p class="eyebrow">Teachers and leaders</p>
+          <h2 class="section-heading section-heading--small">
+            Meet the children’s ministry team.
+          </h2>
+          <div class="team-grid">
+            <article class="team-card">
+              <img src="img/Dee.JPG" alt="Deenbo Kidane" />
+              <div class="team-card__copy">
+                <h3>Deenbo Kidane</h3>
+                <p>Master Apostle</p>
+              </div>
+            </article>
+            <article class="team-card">
+              <img src="img/DSC00891_01.jpg" alt="Abuye Yegezu" />
+              <div class="team-card__copy">
+                <h3>Abuye Yegezu</h3>
+                <p>Secretary Leader</p>
+              </div>
+            </article>
+            <article class="team-card">
+              <img src="img/DSC00879.jpg" alt="Zelalem Yegezu" />
+              <div class="team-card__copy">
+                <h3>Zelalem Yegezu</h3>
+                <p>Angelic Interpreter</p>
+              </div>
+            </article>
+            <article class="team-card">
+              <img src="img/Sally.jpg" alt="Salihome Mengestu" />
+              <div class="team-card__copy">
+                <h3>Salihome Mengestu</h3>
+                <p>Daughter of Apostle Paul</p>
+              </div>
+            </article>
+            <article class="team-card">
+              <img src="img/Bethel.jpg" alt="Bethel Eshetu" />
+              <div class="team-card__copy">
+                <h3>Bethel Eshetu</h3>
+                <p>Optimus Evangelist</p>
+              </div>
+            </article>
+            <article class="team-card">
+              <img src="img/ProphetJosh.jpg" alt="Joshua Lonsako" />
+              <div class="team-card__copy">
+                <h3>Joshua Lonsako</h3>
+                <p>shows up sometimes</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark-section">
+        <div class="container">
+          <div class="intro-grid">
+            <div>
+              <p class="eyebrow">Ministry Affiliations</p>
+              <h2 class="section-heading">
+                Shared leadership. Wider friendship.
+              </h2>
+            </div>
+            <p class="section-intro">
+              These relationships extend our ministry into a wider community of
+              immigrant churches, bicultural leaders, trauma-informed care, and
+              gospel-centered partners across Arizona.
+            </p>
+          </div>
+          <div class="partner-grid">
+            <article class="partner-card">
+              <span class="partner-card__type">A ministry we help lead</span>
+              <h3>Daniel Initiative</h3>
+              <p>
+                Led by the same team serving through FireStarters, Daniel
+                Initiative encourages and equips immigrant churches in Arizona.
+                It creates space for international minority leaders and
+                second-generation bicultural groups to build friendships, pray,
+                worship, learn, and lead together.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.danielinitiative.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Explore Daniel Initiative</a
+              >
+            </article>
+            <article class="partner-card">
+              <span class="partner-card__type">A ministry partner in care</span>
+              <h3>The Faithful City</h3>
+              <p>
+                Founded by Rev. Dr. Sanghoon Yoo, MSW, The Faithful City
+                develops multicultural, resilient servant leaders and creates
+                communities of belonging. Dr. Yoo leads trauma-informed care for
+                FireStarters on the first Wednesday of each month.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.thefaithfulcity.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Explore The Faithful City</a
+              >
+            </article>
+            <article class="partner-card">
+              <span class="partner-card__type">A network we partner with</span>
+              <h3>Surge Network</h3>
+              <p>
+                Surge connects diverse church and ministry leaders committed to
+                friendship, God’s mission, and the flourishing of local
+                communities. Through gatherings, learning, prayer, and
+                collaboration, the network helps churches make Jesus visible
+                throughout the city.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.surgenetwork.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Explore Surge Network</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cta-panel">
+          <div>
+            <p class="eyebrow">Find your place</p>
+            <h2>Come worship, grow, and serve with us.</h2>
+          </div>
+          <div class="cta-panel__actions">
+            <a class="button button--light" href="contact.html"
+              >Plan your visit</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"
+            ><img src="img/FIRESTARTERS.png" alt="" /><span
+              >FireStarters</span
+            ></a
+          >
+          <p>
+            A young-adult ministry growing in Christ, serving the next
+            generation, and partnering for the good of Phoenix.
+          </p>
+        </div>
+        <div>
+          <p class="footer-heading">Explore</p>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="ministries.html">Ministries</a></li>
+            <li><a href="contact.html">Visit</a></li>
+            <li><a href="give.html">Give</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Gather with us</p>
+          <p>
+            El-Bethel Evangelical Ethiopian Missionary Church<br />3643 W
+            Glendale Ave<br />Phoenix, AZ 85051
+          </p>
+        </div>
       </div>
-    </section>
-
-    <!--Ministry Affiliations-->
-    <section class="affiliations">
-      <h3 class="section-title">Ministry Affiliations</h3>
-    </section>
-
-    <!-- Quote Section -->
-    <section class="msg-area">
-      <div class="msg-content">
-        <h2>Verse</h2>
-        <p class="info">
-          I looked again. I saw a huge crowd, too huge to count. Everyone was
-          there—all nations and tribes, all races and languages. And they were
-          standing, dressed in white robes and waving palm branches, standing
-          before the Throne and the Lamb and heartily singing: Salvation to our
-          God on his Throne! Salvation to the Lamb! All who were standing around
-          the Throne—Angels, Elders, Animals—fell on their faces before the
-          Throne and worshiped God, singing: Oh, Yes! The blessing and glory and
-          wisdom and thanksgiving. <br /><span>Revelation 7:9-12</span>
-        </p>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="content-area" id="contact">
-      <h3 class="section-title">Our <span>Contact</span></h3>
-      <ul class="contact-content">
-        <li>
-          <a href="about.html"> <i class="fa fa-map-marker"></i></a>
-
-          <p>3643 W Glendale Ave <br />Phoenix, AZ 85051</p>
-        </li>
-        <li>
-          <i class="fa fa-phone"></i>
-          <p>+123 456 7890 <br />+451 758 9525</p>
-        </li>
-        <li>
-          <i class="fa fa-envelope"></i>
-          <p>FireStarters@gmail.com <br />yourdomain@website.com</p>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-      <p>All Rights Reserved by Your Website</p>
+      <p class="footer-meta">
+        © <span data-year></span> FireStarters Ministry. All rights reserved.
+      </p>
     </footer>
     <script src="js/nav.js"></script>
-    <script src="js/about.js"></script>
   </body>
 </html>

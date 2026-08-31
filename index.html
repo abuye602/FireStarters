@@ -1,148 +1,332 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>FireStarters Ministry</title>
-    <link
-      rel="stylesheet"
-      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="FireStarters is a young-adult ministry in Phoenix growing in Christ, serving children, and partnering across the city."
     />
-    <link rel="stylesheet" href="style.css" />
+    <title>FireStarters Ministry | Phoenix, Arizona</title>
+
+    <!-- Favicon tab images -->
+    <link
+      rel="android-chrome"
+      type="image/png"
+      href="favicon_io/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="android-chrome"
+      type="image/png"
+      href="favicon_io/android-chrome-512x512.png"
+      sizes="512x512"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon_io/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon_io/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
-    <!-- Header/Nav -->
-    <header>
-      <a href="#"><img src="img/FIRESTARTERS.png" class="logo" alt="Logo" /></a>
-      <div class="hamburger" id="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <ul class="nav" id="nav">
-        <li><a href="#" style="color: #ff0000c0">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li class="dropdown">
-          <a href="ministries.html">MINISTRIES</a>
-        </li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <button onclick="location.href = 'give.html'">GIVE</button>
-      </ul>
+
+  <body class="home-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="FireStarters home">
+        <img src="img/FIRESTARTERS.png" alt="" />
+        <span>FireStarters</span>
+      </a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open navigation"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="ministries.html">Ministries</a></li>
+          <li><a href="contact.html">Visit</a></li>
+        </ul>
+        <a class="nav-give" href="give.html">Give</a>
+      </nav>
     </header>
 
-    <!-- Banner img -->
-    <section class="banner-area">
-      <div class="banner-img"></div>
-      <h3>We Seek The Presence of God</h3>
-      <h1>Fire<span>Starters</span></h1>
-      <a href="about.html" class="banner-btn">More Info</a>
-    </section>
+    <main id="main">
+      <section class="hero">
+        <img
+          class="hero__image"
+          src="img/background1.jpeg"
+          alt="The FireStarters young-adult community gathering outdoors"
+        />
+        <div class="hero__content">
+          <p class="eyebrow">A young-adult ministry in Phoenix</p>
+          <h1>
+            Set apart.<br />Growing together.<br /><em
+              >Serving the next generation.</em
+            >
+          </h1>
+          <p class="hero__lead">
+            We are a community pursuing the presence of Jesus, building one
+            another up, and putting our faith to work in the lives of children
+            and across our city.
+          </p>
+          <div class="hero__actions">
+            <a class="button" href="contact.html">Plan your visit</a>
+            <a class="button button--outline" href="about.html">Our story</a>
+          </div>
+        </div>
+      </section>
 
-    <!-- Service Times -->
-    <section class="services-area" id="services">
-      <h3 class="section-title">Our <span>Services</span></h3>
-      <ul class="services-content">
-        <li>
-          <h4>Sunday Services</h4>
-          <p>Time: 7pm-9:30pm</p>
-        </li>
-        <li>
-          <h4>Wednesday Night Prayer</h4>
-          <p>Time: 7pm-9pm</p>
-        </li>
-      </ul>
-    </section>
+      <aside class="gathering-bar" aria-label="Weekly gathering times">
+        <div class="gathering-bar__inner">
+          <div class="gathering-bar__item">
+            <span class="gathering-bar__label">Young adults</span>Sunday nights
+            · 3:00–5:30 PM
+          </div>
+          <div class="gathering-bar__item">
+            <span class="gathering-bar__label"
+              >Wednesday nights · 7:00–9:00 PM</span
+            >First Wednesday: trauma-informed care<br />Remaining Wednesdays:
+            prayer
+          </div>
+          <div class="gathering-bar__item">
+            <span class="gathering-bar__label">Children</span>Sundays · 11:00 AM
+          </div>
+        </div>
+      </aside>
 
-    <hr />
+      <section class="section">
+        <div class="container intro-grid">
+          <div>
+            <p class="eyebrow">Who we are</p>
+            <h2 class="section-heading">Faith becomes a shared life.</h2>
+          </div>
+          <div class="section-intro">
+            <p>
+              FireStarters is a young-adult community centered on Scripture,
+              worship, prayer, fasting, and genuine fellowship. We want every
+              person to know Jesus deeply and live with courage.
+            </p>
+            <p>
+              That life together moves outward. Our team leads and serves the
+              children of our church, invests in emerging leaders, and builds
+              relationships with ministries throughout Arizona.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <!-- About Section -->
-    <section class="about-area" id="about">
-      <h4 class="">We live to be in fellowship with <span>Jesus</span></h4>
-      <p>
-        Started in 2015, Firestarters is a youth ministry centered on the
-        biblical teachings and presence of Jesus. We study the scriptures
-        together, worship together, fast together, and commune with each other
-        regularly.
+      <section class="section ministries-preview">
+        <div class="container">
+          <p class="eyebrow">Where we serve</p>
+          <h2 class="section-heading">
+            One community. Generations growing together.
+          </h2>
+          <div class="card-grid">
+            <article class="ministry-card">
+              <img
+                src="img/young-adults.jpg"
+                alt="Young adults spending time together"
+              />
+              <div class="ministry-card__content">
+                <h3>Young Adults</h3>
+                <p>
+                  Worship, prayer, Scripture, and friendship for a faith that
+                  reaches every part of life.
+                </p>
+                <a class="text-link" href="young-adults.html"
+                  >Discover the community</a
+                >
+              </div>
+            </article>
+            <article class="ministry-card">
+              <img
+                src="img/children.jpg"
+                alt="Children and leaders enjoying an outdoor ministry day"
+              />
+              <div class="ministry-card__content">
+                <h3>Children</h3>
+                <p>
+                  A joyful, nurturing place where children learn the story of
+                  Jesus and experience his love.
+                </p>
+                <a class="text-link" href="children.html"
+                  >Explore children’s ministry</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark-section">
+        <div class="container">
+          <div class="intro-grid">
+            <div>
+              <p class="eyebrow">Connected in mission</p>
+              <h2 class="section-heading">
+                The work is bigger than any one ministry.
+              </h2>
+            </div>
+            <p class="section-intro">
+              We share leadership and friendship beyond our weekly
+              gatherings—strengthening churches, caring for people, encouraging
+              leaders, and collaborating for the good of our city.
+            </p>
+          </div>
+          <div class="partner-grid">
+            <article class="partner-card">
+              <span class="partner-card__type">A ministry we help lead</span>
+              <h3>Daniel Initiative</h3>
+              <p>
+                Encouraging and equipping immigrant churches and bicultural
+                leaders through friendship, prayer, worship, and shared
+                leadership.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.danielinitiative.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit Daniel Initiative</a
+              >
+            </article>
+            <article class="partner-card">
+              <span class="partner-card__type">A ministry partner in care</span>
+              <h3>The Faithful City</h3>
+              <p>
+                Founded by Rev. Dr. Sanghoon Yoo, The Faithful City helps
+                develop resilient leaders and communities of belonging through
+                trauma-informed care.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.thefaithfulcity.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit The Faithful City</a
+              >
+            </article>
+            <article class="partner-card">
+              <span class="partner-card__type">A network we partner with</span>
+              <h3>Surge Network</h3>
+              <p>
+                A wider family of churches and ministry leaders learning,
+                praying, and collaborating to make Jesus visible throughout
+                Arizona.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.surgenetwork.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit Surge Network</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-section">
+        <div class="story-section__image">
+          <img
+            src="img/Worship.jpg"
+            alt="The FireStarters worship team leading the congregation"
+          />
+        </div>
+        <div class="story-section__content">
+          <p class="eyebrow">Since 2015</p>
+          <h2 class="section-heading section-heading--small">
+            Presence first. Service always.
+          </h2>
+          <p>
+            We gather because we believe time with Jesus changes us. We serve
+            because his love sends us toward people—with humility, joy, and a
+            willingness to lead.
+          </p>
+          <a class="button button--dark-outline" href="about.html"
+            >Learn what guides us</a
+          >
+        </div>
+      </section>
+
+      <section class="quote-section">
+        <blockquote>
+          “A great multitude that no one could count, from every nation, tribe,
+          people and language, standing before the throne.”
+        </blockquote>
+        <cite>Revelation 7:9</cite>
+      </section>
+
+      <section class="section">
+        <div class="container cta-panel">
+          <div>
+            <p class="eyebrow">Come as you are</p>
+            <h2>Your place in the community can begin this week.</h2>
+          </div>
+          <div class="cta-panel__actions">
+            <a class="button button--light" href="contact.html"
+              >Plan your visit</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"
+            ><img src="img/FIRESTARTERS.png" alt="" /><span
+              >FireStarters</span
+            ></a
+          >
+          <p>
+            A young-adult ministry growing in Christ, serving the next
+            generation, and partnering for the good of Phoenix.
+          </p>
+        </div>
+        <div>
+          <p class="footer-heading">Explore</p>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="ministries.html">Ministries</a></li>
+            <li><a href="contact.html">Visit</a></li>
+            <li><a href="give.html">Give</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Gather with us</p>
+          <p>
+            El-Bethel Evangelical Ethiopian Missionary Church<br />3643 W
+            Glendale Ave<br />Phoenix, AZ 85051
+          </p>
+        </div>
+      </div>
+      <p class="footer-meta">
+        © <span data-year></span> FireStarters Ministry. All rights reserved.
       </p>
-      <a href="about.html" class="page-link">LEARN MORE</a>
-    </section>
-
-    <!-- Quote Section -->
-    <section class="msg-area">
-      <div class="msg-content">
-        <p class="info">
-          I looked again. I saw a huge crowd, too huge to count. Everyone was
-          there—all nations and tribes, all races and languages. And they were
-          standing, dressed in white robes and waving palm branches, standing
-          before the Throne and the Lamb and heartily singing: Salvation to our
-          God on his Throne! Salvation to the Lamb! All who were standing around
-          the Throne—Angels, Elders, Animals—fell on their faces before the
-          Throne and worshiped God, singing: Oh, Yes! The blessing and glory and
-          wisdom and thanksgiving. <br /><span>Revelation 7:9-12</span>
-        </p>
-      </div>
-    </section>
-
-    <!-- Service Section -->
-    <section class="services-area" id="services">
-      <h3 class="section-title">Our <span>Services</span></h3>
-      <ul class="services-content">
-        <li>
-          <img src="img/Prayer.jpg" alt="" />
-          <h4>Prayers</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
-            dolorem totam explicabo excepturi qui fugiat unde inventore
-            voluptatem? Nostrum magni distinctio beatae obcaecati possimus! Sunt
-            aperiam exercitationem aliquid praesentium beatae!
-          </p>
-        </li>
-        <li>
-          <img src="img/Offering.jpg" alt="" />
-          <h4>Offerings</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
-            dolorem totam explicabo excepturi qui fugiat unde inventore
-            voluptatem? Nostrum magni distinctio beatae obcaecati possimus! Sunt
-            aperiam exercitationem aliquid praesentium beatae!
-          </p>
-        </li>
-        <li>
-          <img src="img/Blessing.jpeg" alt="" />
-          <h4>Blessings</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
-            dolorem totam explicabo excepturi qui fugiat unde inventore
-            voluptatem? Nostrum magni distinctio beatae obcaecati possimus! Sunt
-            aperiam exercitationem aliquid praesentium beatae!
-          </p>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-      <div class="content-area" id="contact">
-        <h3 class="section-title">Our <span>Contact</span></h3>
-        <ul class="contact-content">
-          <li>
-            <a href="contact.html"> <i class="fa fa-map-marker"></i></a>
-
-            <p>3643 W Glendale Ave <br />Phoenix, AZ 85051</p>
-          </li>
-          <li>
-            <a href="contact.html"> <i class="fa fa-phone"></i> </a>
-            <p>+123 456 7890 <br />+451 758 9525</p>
-          </li>
-          <li>
-            <a href="contact.html"> <i class="fa fa-envelope"></i> </a>
-            <p>FireStarters@gmail.com <br />yourdomain@website.com</p>
-          </li>
-        </ul>
-        <p>All Rights Reserved by Your Website</p>
-      </div>
     </footer>
     <script src="js/nav.js"></script>
   </body>

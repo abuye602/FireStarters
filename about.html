@@ -1,167 +1,279 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>FireStarters Ministry</title>
-    <link
-      rel="stylesheet"
-      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Learn about the mission, values, and beliefs that shape FireStarters Ministry."
     />
-    <link rel="stylesheet" href="style.css" />
+    <title>About | FireStarters Ministry</title>
+
+    <!-- Favicon tab images -->
+    <link
+      rel="android-chrome"
+      type="image/png"
+      href="favicon_io/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="android-chrome"
+      type="image/png"
+      href="favicon_io/android-chrome-512x512.png"
+      sizes="512x512"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon_io/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon_io/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
-    <header>
-      <a href="#"><img src="img/FIRESTARTERS.png" class="logo" alt="Logo" /></a>
-      <div class="hamburger" id="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <ul class="nav" id="nav">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="#" style="color: #ff0000c0">ABOUT</a></li>
-        <li class="dropdown">
-          <a href="ministries.html">MINISTRIES</a>
-        </li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <button onclick="location.href = 'give.html'">GIVE</button>
-      </ul>
+
+  <body class="about-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="FireStarters home"
+        ><img src="img/FIRESTARTERS.png" alt="" /><span>FireStarters</span></a
+      >
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open navigation"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="ministries.html">Ministries</a></li>
+          <li><a href="contact.html">Visit</a></li>
+        </ul>
+        <a class="nav-give" href="give.html">Give</a>
+      </nav>
     </header>
 
-    <!-- Banner img -->
-    <section class="banner-area" id="about-banner">
-      <div class="banner-img"></div>
-      <h3>We Seek The Presence of God</h3>
-      <h1>God is <span>Almighty</span></h1>
-    </section>
+    <main id="main">
+      <section class="page-hero">
+        <img
+          src="img/Prayer.jpg"
+          alt="A FireStarters gathering centered on prayer"
+        />
+        <div class="page-hero__content">
+          <p class="eyebrow">About FireStarters</p>
+          <h1>Formed in his presence.<br />Sent in his love.</h1>
+          <p>
+            We are becoming a community whose devotion to Jesus shapes how we
+            worship, grow, serve, and lead.
+          </p>
+        </div>
+      </section>
 
-    <!-- Mission Statement -->
-    <section>
-      <h3 class="section-title">Our <span>Mission</span></h3>
-      <p id="about-text">
-        Igniting hearts to walk boldly with Christ, Firestarters empowers young
-        disciples to cultivate a vibrant spiritual presence in their daily
-        lives. We are committed to nurturing authentic faith journeys where each
-        person becomes a vessel of God's transformative love. Together, we
-        kindle the divine spark within, creating a community where the Spirit's
-        guidance illuminates our path and inspires us to spread that light
-        throughout the world.
+      <section class="section">
+        <div class="container intro-grid">
+          <div>
+            <p class="eyebrow">Our mission</p>
+            <h2 class="section-heading">
+              Igniting faith that becomes a way of life.
+            </h2>
+          </div>
+          <div class="section-intro">
+            <p>
+              FireStarters empowers young adults to walk boldly with Christ and
+              cultivate an active awareness of his presence in everyday life.
+            </p>
+            <p>
+              Through Scripture, worship, prayer, fasting, and authentic
+              friendship, we nurture disciples who carry God’s transforming love
+              into their homes, workplaces, church, and city.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section sand-section">
+        <div class="container">
+          <p class="eyebrow">How we live</p>
+          <h2 class="section-heading">
+            A community built around practice, not performance.
+          </h2>
+          <div class="values-grid">
+            <article class="value-card">
+              <span class="value-card__number">01</span>
+              <h3>Seek Jesus</h3>
+              <p>
+                We make room for the presence of God through worship, Scripture,
+                prayer, and fasting.
+              </p>
+            </article>
+            <article class="value-card">
+              <span class="value-card__number">02</span>
+              <h3>Grow Together</h3>
+              <p>
+                We choose honest friendship, mutual encouragement, and a shared
+                life of discipleship.
+              </p>
+            </article>
+            <article class="value-card">
+              <span class="value-card__number">03</span>
+              <h3>Serve Generously</h3>
+              <p>
+                We lead the next generation and collaborate with others for the
+                flourishing of our city.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <p class="eyebrow">What we believe</p>
+          <h2 class="section-heading">Rooted in the good news of Jesus.</h2>
+          <div class="beliefs">
+            <article class="belief">
+              <h3>
+                <button
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="belief-one"
+                >
+                  <span>God is one</span>
+                  <span aria-hidden="true">+</span>
+                </button>
+              </h3>
+              <div class="belief__content" id="belief-one" hidden>
+                <p>
+                  We believe in one God—Father, Son, and Holy Spirit—worthy of
+                  our worship and the center of all life.
+                </p>
+              </div>
+            </article>
+            <article class="belief">
+              <h3>
+                <button
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="belief-two"
+                >
+                  <span>The Bible is God’s Word</span
+                  ><span aria-hidden="true">+</span>
+                </button>
+              </h3>
+              <div class="belief__content" id="belief-two" hidden>
+                <p>
+                  We receive the Scriptures as God’s trustworthy Word, guiding
+                  what we believe and how we live.
+                </p>
+              </div>
+            </article>
+            <article class="belief">
+              <h3>
+                <button
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="belief-three"
+                >
+                  <span>Salvation is found in Jesus</span
+                  ><span aria-hidden="true">+</span>
+                </button>
+              </h3>
+              <div class="belief__content" id="belief-three" hidden>
+                <p>
+                  We believe salvation is a gift of grace, received through
+                  faith in Jesus Christ—not earned through effort or good works.
+                </p>
+              </div>
+            </article>
+            <article class="belief">
+              <h3>
+                <button
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="belief-four"
+                >
+                  <span>The Spirit forms and sends us</span
+                  ><span aria-hidden="true">+</span>
+                </button>
+              </h3>
+              <div class="belief__content" id="belief-four" hidden>
+                <p>
+                  We depend on the Holy Spirit to transform our character,
+                  empower our witness, and guide us in serving others.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark-section">
+        <div class="container cta-panel">
+          <div>
+            <p class="eyebrow">Life together</p>
+            <h2>There is room for you around the table.</h2>
+          </div>
+          <div class="cta-panel__actions">
+            <a class="button button--light" href="contact.html"
+              >Join us this week</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"
+            ><img src="img/FIRESTARTERS.png" alt="" /><span
+              >FireStarters</span
+            ></a
+          >
+          <p>
+            A young-adult ministry growing in Christ, serving the next
+            generation, and partnering for the good of Phoenix.
+          </p>
+        </div>
+        <div>
+          <p class="footer-heading">Explore</p>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="ministries.html">Ministries</a></li>
+            <li><a href="contact.html">Visit</a></li>
+            <li><a href="give.html">Give</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Gather with us</p>
+          <p>
+            El-Bethel Evangelical Ethiopian Missionary Church<br />3643 W
+            Glendale Ave<br />Phoenix, AZ 85051
+          </p>
+        </div>
+      </div>
+      <p class="footer-meta">
+        © <span data-year></span> FireStarters Ministry. All rights reserved.
       </p>
-    </section>
-
-    <section>
-      <h3 class="section-title" id="beliefs-header"><span>Beliefs</span></h3>
-      <ul>
-        <li>
-          <div class="accordian">
-            <div class="header">
-              <p>THE LORD IS <span>GOD</span> - THE LORD IS ONE</p>
-              <i class="fa fa-solid fa-caret-down"></i>
-            </div>
-            <div class="content">
-              <p>
-                We believe that the Bible clearly teaches salvation is a gift of
-                God’s grace, received through faith in Jesus Christ. As Romans
-                10:9 says, “If you confess with your mouth, ‘Jesus is Lord,’ and
-                believe in your heart that God raised Him from the dead, you
-                will be saved.” This means that salvation is not earned by good
-                works or personal effort, but comes by placing our trust in
-                Jesus, acknowledging Him as Lord, and receiving the new life He
-                offers.
-              </p>
-            </div>
-          </div>
-
-          <hr />
-
-          <div class="accordian">
-            <div class="header">
-              <p>THE BIBLE IS THE DIVINE WORD OF <span>GOD</span></p>
-              <i class="fa fa-solid fa-caret-down"></i>
-            </div>
-            <div class="content">
-              <p>
-                We believe that the Bible clearly teaches salvation is a gift of
-                God’s grace, received through faith in Jesus Christ. As Romans
-                10:9 says, “If you confess with your mouth, ‘Jesus is Lord,’ and
-                believe in your heart that God raised Him from the dead, you
-                will be saved.” This means that salvation is not earned by good
-                works or personal effort, but comes by placing our trust in
-                Jesus, acknowledging Him as Lord, and receiving the new life He
-                offers.
-              </p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="">
-      <h3 class="section-title"><span>Leadership</span></h3>
-      <div class="leader-section">
-        <div class="leader-individual">
-          <img src="img/matt.jpg" alt="" />
-          <p class="leader-title">Matt Smith</p>
-          <p>Doctor Who</p>
-        </div>
-        <div class="leader-individual">
-          <img src="img/matt.jpg" alt="" />
-          <p class="leader-title">Matt Smith</p>
-          <p>Doctor Who</p>
-        </div>
-        <div class="leader-individual">
-          <img src="img/matt.jpg" alt="" />
-          <p class="leader-title">Matt Smith</p>
-          <p>Doctor Who</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Quote Section -->
-    <section class="msg-area">
-      <div class="msg-content">
-        <h2>Verse</h2>
-        <p class="info">
-          I looked again. I saw a huge crowd, too huge to count. Everyone was
-          there—all nations and tribes, all races and languages. And they were
-          standing, dressed in white robes and waving palm branches, standing
-          before the Throne and the Lamb and heartily singing: Salvation to our
-          God on his Throne! Salvation to the Lamb! All who were standing around
-          the Throne—Angels, Elders, Animals—fell on their faces before the
-          Throne and worshiped God, singing: Oh, Yes! The blessing and glory and
-          wisdom and thanksgiving. <br /><span>Revelation 7:9-12</span>
-        </p>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="content-area" id="contact">
-      <h3 class="section-title">Our <span>Contact</span></h3>
-      <ul class="contact-content">
-        <li>
-          <a href="about.html"> <i class="fa fa-map-marker"></i></a>
-
-          <p>3643 W Glendale Ave <br />Phoenix, AZ 85051</p>
-        </li>
-        <li>
-          <i class="fa fa-phone"></i>
-          <p>+123 456 7890 <br />+451 758 9525</p>
-        </li>
-        <li>
-          <i class="fa fa-envelope"></i>
-          <p>FireStarters@gmail.com <br />yourdomain@website.com</p>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-      <p>All Rights Reserved by Your Website</p>
     </footer>
     <script src="js/nav.js"></script>
-    <script src="js/about.js"></script>
   </body>
 </html>

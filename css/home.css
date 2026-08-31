@@ -1,0 +1,170 @@
+/* ================================================================
+   HOME PAGE — index.html
+   Main banner, featured ministries, and Scripture section
+   ================================================================ */
+
+.home-page .hero {
+  align-items: flex-end;
+  background-color: var(--ink);
+  color: var(--white);
+  display: flex;
+  min-height: min(880px, 94vh);
+  overflow: hidden;
+  padding: 10rem clamp(1.25rem, 7vw, 7.5rem) clamp(4.5rem, 8vw, 7rem);
+  position: relative;
+}
+
+.home-page .hero::before {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(17, 15, 13, 0.9) 0%,
+      rgba(17, 15, 13, 0.55) 48%,
+      rgba(17, 15, 13, 0.18) 100%
+    ),
+    linear-gradient(0deg, rgba(17, 15, 13, 0.72) 0%, transparent 45%);
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.home-page .hero__image {
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  object-position: 34% center;
+  position: absolute;
+  width: 100%;
+}
+.home-page .hero__content {
+  max-width: 850px;
+  position: relative;
+  z-index: 2;
+}
+.home-page .hero .eyebrow {
+  color: var(--gold);
+}
+.home-page .hero h1 {
+  font-size: clamp(3.4rem, 8vw, 7.6rem);
+  letter-spacing: -0.035em;
+  max-width: 900px;
+}
+.home-page .hero h1 em {
+  color: #ffbf53;
+  font-weight: 400;
+}
+.home-page .hero__lead {
+  font-size: clamp(1rem, 1.7vw, 1.25rem);
+  margin: 1.5rem 0 2rem;
+  max-width: 650px;
+}
+.home-page .hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+.home-page .ministries-preview {
+  padding-top: 0;
+}
+
+.home-page .card-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 3rem;
+}
+.home-page .ministry-card {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  color: var(--white);
+  min-height: 500px;
+  overflow: hidden;
+  padding: 2rem;
+  position: relative;
+}
+.home-page .ministry-card::after {
+  background: linear-gradient(
+    0deg,
+    rgba(17, 15, 13, 0.9),
+    rgba(17, 15, 13, 0.03) 72%
+  );
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+.home-page .ministry-card img {
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  position: absolute;
+  transition: transform 500ms ease;
+  width: 100%;
+}
+.home-page .ministry-card:hover img {
+  transform: scale(1.035);
+}
+.home-page .ministry-card__content {
+  bottom: 2rem;
+  left: 2rem;
+  max-width: calc(100% - 4rem);
+  position: absolute;
+  z-index: 2;
+}
+.home-page .ministry-card h3 {
+  font-size: clamp(2.3rem, 4vw, 4rem);
+}
+.home-page .ministry-card p {
+  margin: 0.75rem 0 1.25rem;
+  max-width: 500px;
+}
+
+.home-page .quote-section {
+  background:
+    linear-gradient(rgba(19, 17, 15, 0.82), rgba(19, 17, 15, 0.82)),
+    url("../img/Worship.jpg") center / cover;
+  color: var(--white);
+  padding: clamp(5rem, 11vw, 10rem) 1.25rem;
+  text-align: center;
+}
+
+.home-page .quote-section blockquote {
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: clamp(2.1rem, 5vw, 4.8rem);
+  line-height: 1.12;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.home-page .quote-section cite {
+  color: var(--gold);
+  display: block;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 680px) {
+  .home-page .hero {
+    min-height: 760px;
+    padding-bottom: 4rem;
+  }
+  .home-page .hero::before {
+    background: linear-gradient(
+      0deg,
+      rgba(17, 15, 13, 0.9) 0%,
+      rgba(17, 15, 13, 0.28) 100%
+    );
+  }
+  .home-page .hero__image {
+    object-position: 62% center;
+  }
+  .home-page .card-grid {
+    grid-template-columns: 1fr;
+  }
+  .home-page .ministry-card {
+    min-height: 430px;
+  }
+}

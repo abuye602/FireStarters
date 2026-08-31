@@ -1,0 +1,66 @@
+/* ================================================================
+   MINISTRIES PAGE — ministries.html
+   Ministry detail layouts, schedules, and leader spacing
+   ================================================================ */
+
+.ministries-page .split-layout {
+  align-items: center;
+  display: grid;
+  gap: clamp(2.5rem, 7vw, 7rem);
+  grid-template-columns: 1fr 1fr;
+}
+.ministries-page .split-layout--reverse .split-layout__media {
+  order: 2;
+}
+.ministries-page .split-layout__media img {
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+  width: 100%;
+}
+.ministries-page .split-layout__copy p {
+  color: var(--muted);
+  margin: 1.25rem 0;
+}
+.ministries-page .ministry-action {
+  margin-top: 2rem;
+}
+.ministries-page .leader-block {
+  margin-top: 5rem;
+}
+
+.ministries-page .schedule-list {
+  border-top: 1px solid var(--line);
+  margin-top: 2rem;
+}
+.ministries-page .schedule-list li {
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  padding: 1.1rem 0;
+}
+.ministries-page .schedule-list strong {
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .ministries-page .split-layout {
+    grid-template-columns: 1fr;
+  }
+  .ministries-page .split-layout--reverse .split-layout__media {
+    order: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .ministries-page .schedule-list li {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+}

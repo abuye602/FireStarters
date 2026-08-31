@@ -1,106 +1,146 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>FireStarters Ministry</title>
-    <link
-      rel="stylesheet"
-      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Information about supporting the work of FireStarters Ministry."
     />
-    <link rel="stylesheet" href="style.css" />
+    <title>Give | FireStarters Ministry</title>
+
+    <!-- Favicon tab images -->
+    <link
+      rel="android-chrome"
+      type="image/png"
+      href="favicon_io/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="android-chrome"
+      type="image/png"
+      href="favicon_io/android-chrome-512x512.png"
+      sizes="512x512"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon_io/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon_io/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
-    <header class="contact-">
-      <h2 class="logo">
-        <a href="index.html"
-          ><img
-            src="img/FIRESTARTERS.png"
-            id="contact-logo"
-            class="logo"
-            alt="Logo"
-        /></a>
-      </h2>
-      <div class="hamburger" id="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <ul class="nav" id="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="ministries.html">Ministries</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+
+  <body class="give-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header site-header--solid">
+      <a class="brand" href="index.html" aria-label="FireStarters home"
+        ><img src="img/FIRESTARTERS.png" alt="" /><span>FireStarters</span></a
+      ><button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open navigation"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="ministries.html">Ministries</a></li>
+          <li><a href="contact.html">Visit</a></li>
+        </ul>
+        <a class="nav-give" href="give.html" aria-current="page">Give</a>
+      </nav>
     </header>
 
-    <!-- Form section -->
-    <section>
-      <form action="">
-        <span>Give Here</span>
-        <div>
-          <input type="text" name="FName" placeholder="First Name" />
-          <input type="text" name="LName" placeholder="Last Name" />
+    <main id="main">
+      <section class="section">
+        <div class="giving-card">
+          <p class="eyebrow">Generosity</p>
+          <h1>Give with confidence.</h1>
+          <p>
+            Online giving is not yet connected on this website. We have removed
+            the previous card-entry form so no sensitive payment information is
+            collected without a secure giving provider.
+          </p>
+          <p>
+            If you would like to support FireStarters, please speak with a
+            ministry leader at one of our weekly gatherings. A verified online
+            giving option can be added here when it is available.
+          </p>
+          <a class="button button--dark-outline" href="contact.html"
+            >View gathering details</a
+          >
         </div>
-        <div>
-          <input
-            type="text"
-            name="CardNumber"
-            placeholder="Card Number"
-            required
-          />
-          <input
-            type="number"
-            name="ExpDate"
-            placeholder="MM"
-            min="1"
-            max="12"
-            required
-          />
-          <input type="text" name="ExpYear" placeholder="YYYY" required />
-          <input
-            type="text"
-            name="CVV"
-            placeholder="CVV"
-            minlength="3"
-            maxlength="3"
-            required
-          />
-        </div>
-      </form>
-    </section>
+      </section>
 
-    <!-- Contact Section -->
-    <section class="content-area" id="contact">
-      <div class="contact-container">
-        <div class="contact-info">
-          <h3 class="section-title">Our <span> Contact</span></h3>
+      <section class="section dark-section">
+        <div class="container intro-grid">
           <div>
-            <ul class="contact-content">
-              <li>
-                <a href="contact.html"> <i class="fa fa-map-marker"></i></a>
-
-                <p>3643 W Glendale Ave <br />Phoenix, AZ 85051</p>
-              </li>
-              <li>
-                <a href="contact.html"> <i class="fa fa-phone"></i> </a>
-                <p>+123 456 7890 <br />+451 758 9525</p>
-              </li>
-              <li>
-                <a href="contact.html"> <i class="fa fa-envelope"></i> </a>
-                <p>FireStarters@gmail.com <br />yourdomain@website.com</p>
-              </li>
-            </ul>
+            <p class="eyebrow">Why we give</p>
+            <h2 class="section-heading section-heading--small">
+              Generosity makes room for ministry.
+            </h2>
           </div>
+          <p class="section-intro">
+            Giving helps create places for young adults to grow, children to
+            encounter Jesus, and ministry partnerships to flourish. We want
+            every gift to be handled responsibly and transparently.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"
+            ><img src="img/FIRESTARTERS.png" alt="" /><span
+              >FireStarters</span
+            ></a
+          >
+          <p>
+            A young-adult ministry growing in Christ, serving the next
+            generation, and partnering for the good of Phoenix.
+          </p>
+        </div>
+        <div>
+          <p class="footer-heading">Explore</p>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="ministries.html">Ministries</a></li>
+            <li><a href="contact.html">Visit</a></li>
+            <li><a href="give.html">Give</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Gather with us</p>
+          <p>
+            El-Bethel Evangelical Ethiopian Missionary Church<br />3643 W
+            Glendale Ave<br />Phoenix, AZ 85051
+          </p>
         </div>
       </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-      <p>All Rights Reserved by Your Website</p>
+      <p class="footer-meta">
+        © <span data-year></span> FireStarters Ministry. All rights reserved.
+      </p>
     </footer>
     <script src="js/nav.js"></script>
   </body>

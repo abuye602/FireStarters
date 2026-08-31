@@ -1,0 +1,33 @@
+/* ================================================================
+   CHILDREN PAGE — children.html
+   Page-specific image framing
+   ================================================================ */
+
+.children-page .page-hero img { object-position: center; }
+
+.children-page .values-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 3rem;
+}
+
+.children-page .value-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.children-page .value-card__number {
+  color: var(--ember);
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 2rem;
+}
+
+.children-page .value-card h3 { font-size: 1.7rem; margin: 1.75rem 0 0.75rem; }
+.children-page .value-card p { color: var(--muted); }
+
+@media (max-width: 900px) {
+  .children-page .values-grid { grid-template-columns: 1fr; }
+}

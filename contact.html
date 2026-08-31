@@ -1,81 +1,168 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>FireStarters Ministry</title>
-    <link
-      rel="stylesheet"
-      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Plan a visit to FireStarters Ministry at El-Bethel Evangelical Ethiopian Missionary Church in Phoenix."
     />
-    <link rel="stylesheet" href="style.css" />
+    <title>Plan a Visit | FireStarters Ministry</title>
+
+    <!-- Favicon tab images -->
+    <link
+      rel="android-chrome"
+      type="image/png"
+      href="favicon_io/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="android-chrome"
+      type="image/png"
+      href="favicon_io/android-chrome-512x512.png"
+      sizes="512x512"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon_io/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon_io/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
-    <header class="header">
-      <a href="index.html"
-        ><img
-          src="img/FIRESTARTERS.png"
-          id="contact-logo"
-          class="logo"
-          alt="Logo"
-      /></a>
-      <div class="hamburger" id="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <ul class="nav" id="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="ministries.html">Ministries</a></li>
-        <li><a class="active" href="contact.html">Contact</a></li>
-        <button onclick="location.href = 'give.html'">Give</button>
-      </ul>
+
+  <body class="contact-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header site-header--solid">
+      <a class="brand" href="index.html" aria-label="FireStarters home"
+        ><img src="img/FIRESTARTERS.png" alt="" /><span>FireStarters</span></a
+      ><button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open navigation"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="ministries.html">Ministries</a></li>
+          <li><a href="contact.html" aria-current="page">Visit</a></li>
+        </ul>
+        <a class="nav-give" href="give.html">Give</a>
+      </nav>
     </header>
 
-    <!-- Contact Section -->
-    <section class="content-area" id="contact">
-      <div class="contact-container">
-        <div class="contact-info">
-          <h3 class="section-title">Our <span> Contact</span></h3>
+    <main id="main">
+      <section class="section">
+        <div class="container contact-grid">
           <div>
-            <ul class="contact-content">
+            <p class="eyebrow">Plan your visit</p>
+            <h1 class="section-heading">There’s a place for you here.</h1>
+            <p class="section-intro contact-intro">
+              Join us at El-Bethel Evangelical Ethiopian Missionary Church in
+              Phoenix. Come as you are and expect a warm welcome.
+            </p>
+            <ul class="contact-details">
               <li>
-                <a href="contact.html"> <i class="fa fa-map-marker"></i></a>
-
-                <p>3643 W Glendale Ave <br />Phoenix, AZ 85051</p>
+                <span>Address</span
+                ><a
+                  href="https://www.google.com/maps/search/?api=1&amp;query=3643+W+Glendale+Ave+Phoenix+AZ+85051"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >3643 W Glendale Ave<br />Phoenix, AZ 85051</a
+                >
               </li>
+              <li><span>Young adults</span>Sunday nights · 3:00–5:30 PM</li>
               <li>
-                <a href="contact.html"> <i class="fa fa-phone"></i> </a>
-                <p>+123 456 7890 <br />+451 758 9525</p>
+                <span>First Wednesday</span>Trauma-informed care with Rev. Dr.
+                Sanghoon Yoo · 7:00–9:00 PM
               </li>
-              <li>
-                <a href="contact.html"> <i class="fa fa-envelope"></i> </a>
-                <p>FireStarters@gmail.com <br />yourdomain@website.com</p>
-              </li>
+              <li><span>Remaining Wednesdays</span>Prayer · 7:00–9:00 PM</li>
+              <li><span>Children’s ministry</span>Sundays · 11:00 AM</li>
             </ul>
           </div>
-        </div>
-        <div class="map">
-          <h1>El-Bethel Evalangical Ethiopian Missionary Church</h1>
           <iframe
+            class="map-frame"
+            title="Map showing El-Bethel Evangelical Ethiopian Missionary Church"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.585648461129!2d-112.14068482462143!3d33.53815707335485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b6ca1e3ceceef%3A0x9b52d0f82cc3a2f5!2sEl-Bethel%20Evalangical%20Ethiopian%20Missionary%20Church!5e0!3m2!1sen!2sus!4v1718791363685!5m2!1sen!2sus"
-            width="600"
-            height="450"
-            style="border: 2px solid #bcb1b1; border-radius: 10px"
-            allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
           ></iframe>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Footer Section -->
-    <footer>
-      <p>All Rights Reserved by Your Website</p>
+      <section class="section sand-section">
+        <div class="container intro-grid">
+          <div>
+            <p class="eyebrow">Your first visit</p>
+            <h2 class="section-heading section-heading--small">
+              You don’t need to have everything figured out.
+            </h2>
+          </div>
+          <div class="section-intro">
+            <p>
+              Our gatherings are centered on Jesus and shaped by prayer,
+              worship, Scripture, and community. Wear what feels comfortable,
+              arrive a few minutes early, and introduce yourself—we would be
+              glad to meet you.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"
+            ><img src="img/FIRESTARTERS.png" alt="" /><span
+              >FireStarters</span
+            ></a
+          >
+          <p>
+            A young-adult ministry growing in Christ, serving the next
+            generation, and partnering for the good of Phoenix.
+          </p>
+        </div>
+        <div>
+          <p class="footer-heading">Explore</p>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="ministries.html">Ministries</a></li>
+            <li><a href="contact.html">Visit</a></li>
+            <li><a href="give.html">Give</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Gather with us</p>
+          <p>
+            El-Bethel Evangelical Ethiopian Missionary Church<br />3643 W
+            Glendale Ave<br />Phoenix, AZ 85051
+          </p>
+        </div>
+      </div>
+      <p class="footer-meta">
+        © <span data-year></span> FireStarters Ministry. All rights reserved.
+      </p>
     </footer>
     <script src="js/nav.js"></script>
   </body>

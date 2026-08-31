@@ -1,0 +1,47 @@
+/* ================================================================
+   CONTACT / VISIT PAGE — contact.html
+   Visit details and map
+   ================================================================ */
+
+.contact-page .contact-grid {
+  align-items: start;
+  display: grid;
+  gap: clamp(2.5rem, 7vw, 7rem);
+  grid-template-columns: 0.8fr 1.2fr;
+}
+.contact-page .contact-intro {
+  margin-top: 1.5rem;
+}
+.contact-page .contact-details {
+  margin-top: 2.5rem;
+}
+.contact-page .contact-details li {
+  border-top: 1px solid var(--line);
+  padding: 1.2rem 0;
+}
+.contact-page .contact-details li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.contact-page .contact-details span {
+  color: var(--ember);
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+.contact-page .map-frame {
+  background: #ddd4c8;
+  border: 0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  min-height: 520px;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .contact-page .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,71 @@
+/* ================================================================
+   ABOUT PAGE — about.html
+   Values and belief accordion
+   ================================================================ */
+
+.about-page .values-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 3rem;
+}
+.about-page .value-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.about-page .value-card__number {
+  color: var(--ember);
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 2rem;
+}
+.about-page .value-card h3 {
+  font-size: 1.7rem;
+  margin: 1.75rem 0 0.75rem;
+}
+.about-page .value-card p {
+  color: var(--muted);
+}
+
+.about-page .beliefs {
+  border-top: 1px solid var(--line);
+  margin-top: 3rem;
+}
+.about-page .belief {
+  border-bottom: 1px solid var(--line);
+}
+.about-page .belief button {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: var(--ink);
+  cursor: pointer;
+  display: flex;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  justify-content: space-between;
+  padding: 1.6rem 0;
+  text-align: left;
+  width: 100%;
+}
+.about-page .belief button span:last-child {
+  color: var(--ember);
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem;
+  transition: transform 180ms ease;
+}
+.about-page .belief button[aria-expanded="true"] span:last-child {
+  transform: rotate(45deg);
+}
+.about-page .belief__content {
+  color: var(--muted);
+  max-width: 800px;
+  padding: 0 0 1.8rem;
+}
+
+@media (max-width: 900px) {
+  .about-page .values-grid {
+    grid-template-columns: 1fr;
+  }
+}

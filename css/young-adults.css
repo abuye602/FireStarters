@@ -1,0 +1,7 @@
+/* ================================================================
+   YOUNG ADULTS PAGE — young-adults.html
+   Page-specific image framing
+   ================================================================ */
+
+.young-adults-page .page-hero img { object-position: center; }
+.young-adults-page .story-section__image img { object-position: center; }

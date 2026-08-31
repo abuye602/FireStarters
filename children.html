@@ -1,105 +1,214 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>FireStarters Ministry</title>
-    <link
-      rel="stylesheet"
-      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="FireStarters Children’s Ministry creates a joyful place for children to learn about Jesus and grow in faith."
     />
-    <link rel="stylesheet" href="style.css" />
+    <title>Children’s Ministry | FireStarters</title>
+
+    <!-- Favicon tab images -->
+    <link
+      rel="android-chrome"
+      type="image/png"
+      href="favicon_io/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="android-chrome"
+      type="image/png"
+      href="favicon_io/android-chrome-512x512.png"
+      sizes="512x512"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon_io/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon_io/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
-    <!-- Header Section -->
-    <header>
-      <h2 class="logo">
-        <a href="index.html"
-          ><img src="img/FIRESTARTERS.png" class="logo" alt="Logo"
-        /></a>
-      </h2>
-      <div class="hamburger" id="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <ul class="nav" id="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li class="dropdown">
-          <a href="#">Ministries</a>
-          <ul class="dropdown-menu">
-            <li><a class="active" href="children.html">Children</a></li>
-            <li><a href="young-adults.html">Young Adults</a></li>
-            <li><a href="#">Afiliation</a></li>
-          </ul>
-        </li>
-        <li><a href="contact.html">Contact</a></li>
-        <button onclick="location.href = 'give.html'">Give</button>
-      </ul>
+
+  <body class="children-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="FireStarters home"
+        ><img src="img/FIRESTARTERS.png" alt="" /><span>FireStarters</span></a
+      ><button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open navigation"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="ministries.html" aria-current="page">Ministries</a></li>
+          <li><a href="contact.html">Visit</a></li>
+        </ul>
+        <a class="nav-give" href="give.html">Give</a>
+      </nav>
     </header>
 
-    <!-- Banner img -->
-    <section class="banner-area" id="children-banner">
-      <div class="banner-img"></div>
-      <h3>We Seek The Presence of God</h3>
-      <h1>God is <span>Almighty</span></h1>
-      <a href="#" class="banner-btn">More Info</a>
-    </section>
+    <main id="main">
+      <section class="page-hero">
+        <img
+          src="img/children.jpg"
+          alt="Children and ministry leaders enjoying an outdoor activity"
+        />
+        <div class="page-hero__content">
+          <p class="eyebrow">Children’s ministry</p>
+          <h1>Wonder, belonging,<br />and a growing faith.</h1>
+          <p>
+            A joyful environment where children discover the story of Jesus and
+            experience the care of a church family.
+          </p>
+        </div>
+      </section>
 
-    <!-- Service Section -->
-    <section class="services-area" id="services">
-      <h3 class="section-title">Youth <span>Service</span></h3>
-      <ul class="services-content">
-        <li>
-          <h4>Sunday Morning Service</h4>
-          <p>Time: 11am-12:30pm</p>
-        </li>
-      </ul>
-    </section>
+      <aside class="gathering-bar" aria-label="Children’s ministry information">
+        <div class="gathering-bar__inner">
+          <div class="gathering-bar__item">
+            <span class="gathering-bar__label">Sunday gathering</span>11:00 AM
+          </div>
+          <div class="gathering-bar__item">
+            <span class="gathering-bar__label">Led by</span>FireStarters young
+            adults
+          </div>
+          <div class="gathering-bar__item">
+            <span class="gathering-bar__label">Location</span>3643 W Glendale
+            Ave
+          </div>
+        </div>
+      </aside>
 
-    <!-- Quote Section -->
-    <section class="msg-area">
-      <div class="msg-content">
-        <h2>Verse</h2>
-        <p class="info">
-          I looked again. I saw a huge crowd, too huge to count. Everyone was
-          there—all nations and tribes, all races and languages. And they were
-          standing, dressed in white robes and waving palm branches, standing
-          before the Throne and the Lamb and heartily singing: Salvation to our
-          God on his Throne! Salvation to the Lamb! All who were standing around
-          the Throne—Angels, Elders, Animals—fell on their faces before the
-          Throne and worshiped God, singing: Oh, Yes! The blessing and glory and
-          wisdom and thanksgiving. <br /><span>Revelation 7:9-12</span>
-        </p>
+      <section class="section">
+        <div class="container intro-grid">
+          <div>
+            <p class="eyebrow">For the next generation</p>
+            <h2 class="section-heading">
+              Helping children know they are deeply loved.
+            </h2>
+          </div>
+          <div class="section-intro">
+            <p>
+              Our children’s ministry provides a nurturing place where young
+              people can grow in their understanding of God’s love. Through
+              Bible stories, worship, conversation, and engaging activities, we
+              help children build a strong spiritual foundation.
+            </p>
+            <p>
+              The same young-adult community that gathers as FireStarters also
+              serves here—learning to lead with patience, joy, responsibility,
+              and care.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section sand-section">
+        <div class="container">
+          <p class="eyebrow">What we value</p>
+          <h2 class="section-heading">
+            A place to learn, participate, and belong.
+          </h2>
+          <div class="values-grid">
+            <article class="value-card">
+              <span class="value-card__number">01</span>
+              <h3>Jesus-centered</h3>
+              <p>
+                Every lesson and activity helps children discover who Jesus is
+                and how deeply he loves them.
+              </p>
+            </article>
+            <article class="value-card">
+              <span class="value-card__number">02</span>
+              <h3>Engaging</h3>
+              <p>
+                We use stories, worship, conversation, creativity, and play to
+                make learning memorable.
+              </p>
+            </article>
+            <article class="value-card">
+              <span class="value-card__number">03</span>
+              <h3>Caring</h3>
+              <p>
+                We want each child and family to be known, welcomed, and treated
+                with dignity.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cta-panel">
+          <div>
+            <p class="eyebrow">Sunday at 11</p>
+            <h2>Bring the whole family.</h2>
+          </div>
+          <div class="cta-panel__actions">
+            <a class="button button--light" href="contact.html"
+              >Plan your visit</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"
+            ><img src="img/FIRESTARTERS.png" alt="" /><span
+              >FireStarters</span
+            ></a
+          >
+          <p>
+            A young-adult ministry growing in Christ, serving the next
+            generation, and partnering for the good of Phoenix.
+          </p>
+        </div>
+        <div>
+          <p class="footer-heading">Explore</p>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="ministries.html">Ministries</a></li>
+            <li><a href="contact.html">Visit</a></li>
+            <li><a href="give.html">Give</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Gather with us</p>
+          <p>
+            El-Bethel Evangelical Ethiopian Missionary Church<br />3643 W
+            Glendale Ave<br />Phoenix, AZ 85051
+          </p>
+        </div>
       </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="content-area" id="contact">
-      <h3 class="section-title">Our <span>Contact</span></h3>
-      <ul class="contact-content">
-        <li>
-          <a href="about.html"> <i class="fa fa-map-marker"></i></a>
-
-          <p>3643 W Glendale Ave <br />Phoenix, AZ 85051</p>
-        </li>
-        <li>
-          <i class="fa fa-phone"></i>
-          <p>+123 456 7890 <br />+451 758 9525</p>
-        </li>
-        <li>
-          <i class="fa fa-envelope"></i>
-          <p>FireStarters@gmail.com <br />yourdomain@website.com</p>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-      <p>All Rights Reserved by Your Website</p>
+      <p class="footer-meta">
+        © <span data-year></span> FireStarters Ministry. All rights reserved.
+      </p>
     </footer>
     <script src="js/nav.js"></script>
   </body>
