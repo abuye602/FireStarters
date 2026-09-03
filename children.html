@@ -63,7 +63,22 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="ministries.html" aria-current="page">Ministries</a></li>
+          <li class="nav-dropdown">
+            <div class="nav-dropdown__trigger">
+              <a href="ministries.html">Ministries</a>
+              <button
+                class="nav-dropdown__toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="ministries-menu"
+                aria-label="Show ministry links"
+              ><span aria-hidden="true"></span></button>
+            </div>
+            <ul class="nav-dropdown__menu" id="ministries-menu">
+              <li><a href="young-adults.html">Young Adults</a></li>
+              <li><a href="children.html" aria-current="page">Children</a></li>
+            </ul>
+          </li>
           <li><a href="contact.html">Visit</a></li>
         </ul>
         <a class="nav-give" href="give.html">Give</a>

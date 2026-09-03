@@ -118,7 +118,7 @@ ul {
   gap: 2rem;
 }
 
-.site-nav ul {
+.site-nav > ul {
   align-items: center;
   display: flex;
   gap: 2rem;
@@ -147,6 +147,115 @@ ul {
 .site-nav ul a:hover::after,
 .site-nav ul a:focus-visible::after,
 .site-nav ul a[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown__trigger {
+  align-items: center;
+  display: flex;
+  gap: 0.3rem;
+}
+
+.nav-dropdown__toggle {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  height: 2rem;
+  justify-content: center;
+  padding: 0;
+  width: 1.75rem;
+}
+
+.nav-dropdown__toggle span {
+  border-bottom: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  display: block;
+  height: 0.45rem;
+  transform: rotate(45deg) translate(-2px, 2px);
+  transition: transform 180ms ease;
+  width: 0.45rem;
+}
+
+.site-nav .nav-dropdown__menu {
+  align-items: stretch;
+  background: var(--ink);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.75rem;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  left: 0;
+  min-width: 230px;
+  opacity: 0;
+  padding: 0.55rem;
+  pointer-events: none;
+  position: absolute;
+  top: calc(100% + 0.75rem);
+  transform: translateY(-0.4rem);
+  transition:
+    opacity 160ms ease,
+    transform 160ms ease,
+    visibility 0s linear 160ms;
+  visibility: hidden;
+}
+
+.site-nav .nav-dropdown__menu::before {
+  bottom: 100%;
+  content: "";
+  height: 0.75rem;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.nav-dropdown__menu a {
+  border-radius: 0.45rem;
+  display: block;
+  font-size: 0.78rem;
+  padding: 0.7rem 0.85rem;
+  white-space: nowrap;
+}
+
+.site-nav .nav-dropdown__menu a::after {
+  display: none;
+}
+
+.nav-dropdown__menu a:hover,
+.nav-dropdown__menu a:focus-visible,
+.nav-dropdown__menu a[aria-current="page"] {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--gold);
+}
+
+.nav-dropdown:hover .nav-dropdown__menu,
+.nav-dropdown.is-open .nav-dropdown__menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+  transition-delay: 0s;
+  visibility: visible;
+}
+
+.nav-dropdown__toggle:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.nav-dropdown.is-open .nav-dropdown__toggle span {
+  transform: rotate(225deg) translate(-1px, 1px);
+}
+
+.nav-dropdown:has(.nav-dropdown__menu a[aria-current="page"])
+  .nav-dropdown__trigger
+  > a::after {
   transform: scaleX(1);
 }
 
@@ -384,9 +493,11 @@ h3 {
   border: 1px solid rgba(255, 255, 255, 0.08);
   min-height: 355px;
   padding: clamp(2rem, 5vw, 4rem);
+  margin: 0.5rem;
 }
 .partner-card:first-child {
   border-radius: var(--radius) 0 0 var(--radius);
+  margin: 0.5rem;
 }
 .partner-card:last-child {
   border-radius: 0 var(--radius) var(--radius) 0;
@@ -602,17 +713,50 @@ h3 {
     transition-delay: 0s;
     visibility: visible;
   }
-  .site-nav ul {
+  .site-nav > ul {
     align-items: flex-start;
     flex-direction: column;
     gap: 1.2rem;
   }
-  .site-nav ul a {
+  .site-nav > ul > li > a,
+  .nav-dropdown__trigger > a {
     font-family: "DM Serif Display", Georgia, serif;
     font-size: 2.2rem;
     font-weight: 400;
     letter-spacing: 0;
     text-transform: none;
+  }
+  .nav-dropdown {
+    width: 100%;
+  }
+  .nav-dropdown__toggle {
+    height: 3rem;
+    margin-left: 0.25rem;
+    width: 3rem;
+  }
+  .site-nav .nav-dropdown__menu {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    display: none;
+    margin-top: 0.45rem;
+    min-width: 0;
+    opacity: 1;
+    padding: 0 0 0 1rem;
+    pointer-events: auto;
+    position: static;
+    transform: none;
+    visibility: visible;
+  }
+  .site-nav .nav-dropdown.is-open .nav-dropdown__menu {
+    display: flex;
+  }
+  .site-nav .nav-dropdown__menu::before {
+    display: none;
+  }
+  .nav-dropdown__menu a {
+    font-size: 1rem;
+    padding: 0.45rem 0;
   }
   .nav-give {
     margin-top: 1rem;

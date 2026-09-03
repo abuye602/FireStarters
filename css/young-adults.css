@@ -3,5 +3,47 @@
    Page-specific image framing
    ================================================================ */
 
-.young-adults-page .page-hero img { object-position: center; }
-.young-adults-page .story-section__image img { object-position: center; }
+.young-adults-page .page-hero img {
+  object-position: center;
+}
+
+.young-adults-page .story-section__image img {
+  object-position: center;
+}
+
+.young-adults-page .latest-sermon {
+  padding-top: 0;
+}
+
+.young-adults-page .latest-sermon__grid {
+  align-items: center;
+  display: grid;
+  gap: clamp(2rem, 6vw, 5rem);
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+}
+
+.young-adults-page .latest-sermon__copy > p:not(.eyebrow) {
+  color: var(--muted);
+  margin: 1.25rem 0 1.75rem;
+  max-width: 35rem;
+}
+
+.young-adults-page .latest-sermon__video {
+  aspect-ratio: 16 / 9;
+  background: var(--ink);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.young-adults-page .latest-sermon__video iframe {
+  border: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 680px) {
+  .young-adults-page .latest-sermon__grid {
+    grid-template-columns: 1fr;
+  }
+}

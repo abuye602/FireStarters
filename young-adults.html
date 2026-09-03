@@ -63,7 +63,22 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="ministries.html" aria-current="page">Ministries</a></li>
+          <li class="nav-dropdown">
+            <div class="nav-dropdown__trigger">
+              <a href="ministries.html">Ministries</a>
+              <button
+                class="nav-dropdown__toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="ministries-menu"
+                aria-label="Show ministry links"
+              ><span aria-hidden="true"></span></button>
+            </div>
+            <ul class="nav-dropdown__menu" id="ministries-menu">
+              <li><a href="young-adults.html" aria-current="page">Young Adults</a></li>
+              <li><a href="children.html">Children</a></li>
+            </ul>
+          </li>
           <li><a href="contact.html">Visit</a></li>
         </ul>
         <a class="nav-give" href="give.html">Give</a>
@@ -121,6 +136,41 @@
               people whose life with Jesus changes how we lead, work, create,
               build relationships, and serve.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section latest-sermon"
+        aria-labelledby="latest-sermon-heading"
+      >
+        <div class="container latest-sermon__grid">
+          <div class="latest-sermon__copy">
+            <p class="eyebrow">Young Adults messages</p>
+            <h2 class="section-heading" id="latest-sermon-heading">
+              A word for the week ahead.
+            </h2>
+            <p>
+              Watch the newest message from FireStarters, or continue through
+              recent sermons from our young-adult community.
+            </p>
+            <a
+              class="button button--dark-outline"
+              href="https://www.youtube.com/@firestarters5978"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Visit our YouTube channel</a
+            >
+          </div>
+          <div class="latest-sermon__video">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/videoseries?list=UUvZmeRJUq8AUkzHqKwNqNWw"
+              title="Latest FireStarters Young Adults sermon on YouTube"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </section>
